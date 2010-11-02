@@ -26,7 +26,7 @@ Major changes:
 * Expires value for nginx.conf corrected.
 * License clarified.
 
-#### style.css
+#### base.css
 * Removed -webkit-font-smoothing: antialiased; as it made monospace too thin.
 * Updated fonts normalization to YUI 3.2.0 PR1.
 * Table Header set explicitly for IE6 and table row now has page-break: avoid in print CSS.
