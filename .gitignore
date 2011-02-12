@@ -17,11 +17,16 @@
 nbproject
 thumbs.db
 
+# Dreamweaver added files
+_notes
+dwsync.xml
+
 # Folders to ignore
 .hg
 .svn
 publish
 .idea
 
-# files
+# build script local files
 build/buildinfo.properties
+build/config/buildinfo.properties

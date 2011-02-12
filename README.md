@@ -79,7 +79,7 @@ Shi Chuan, Rob Larsen, Ivan Nikolić, Mikko Tikkanen, Velir, Paul Neave, Weston 
 
 ##### Thanks:
 
-voodootikigod, garowetz, fearphage, christopherjacob, mathias byenens, daniel harttman, rse, chris dary, erik dahlstrom, timwillison, ken nordahl, riddle, elcuervo, andreas kuckartz, 3rdEden, riley willis, majic3
+voodootikigod, garowetz, fearphage, christopherjacob, mathias byenens, daniel harttman, rse, chris dary, erik dahlstrom, timwillison, kenneth nordahl, riddle, elcuervo, andreas kuckartz, 3rdEden, riley willis, majic3
 
 ### v0.9 : August 10th, 2010 - Initial release
 
@@ -92,7 +92,7 @@ Major components:
 * jQuery: MIT/GPL license
 * DD_belatedPNG: MIT license
 * YUI Profiling: BSD license
-* HTML5Doctor CSS reset: Creative Commons 3.0 BY
+* HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
 
 Everything else:
