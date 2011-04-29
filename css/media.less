@@ -4,24 +4,21 @@
  * These follow after primary styles so they will successfully override.
  */
 
-/* Style adjustments for portrait mode goes here.
-@media all and (orientation:portrait) { }
- */
+@media all and (orientation:portrait) {
+  /* Style adjustments for portrait mode goes here */
 
+}
 
-/* Style adjustments for landscape mode goes here. 
-@media all and (orientation:landscape) { }
- */
- 
-/* For the iPad 
-@media only screen and (max-device-width: 1024px) and (orientation:portrait) { }
+@media all and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
 
-@media only screen and (max-device-width: 1024px) and (orientation:landscape) { }
- */
-
+}
 
 /* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ 
-@media screen and (max-device-width: 480px) { }
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
 
- */
+
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
