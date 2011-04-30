@@ -1,0 +1,233 @@
+/* Reset and reasonable base styles */
+/* 
+Sources:
+http://stuffandnonsense.co.uk/projects/320andup
+http://meyerweb.com/eric/tools/css/reset
+http://people.opera.com/patrickl/experiments/keyboard/test
+http://gist.github.com/413930
+http://pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap
+http://sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars
+http://tjkdesign.com/ez-css/css/base.css
+http://viget.com/inspire/styling-the-button-element-in-internet-explorer
+http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing
+http://html5doctor.com/html-5-reset-stylesheet/
+http://praegnanz.de/weblog/htmlcssjs-kickstart/
+http://camendesign.com/design/
+http://yui.yahooapis.com/2.8.1/build/base/base.css
+http://webaim.org/techniques/css/invisiblecontent/
+http://drupal.org/node/897638
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin : 0;
+padding : 0;
+border : 0;
+font-size : 100%;
+font : inherit;
+vertical-align : baseline; }
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display : block; }
+
+blockquote, q { 
+quotes : none; }
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after { 
+content : ""; content: none; }
+
+del { 
+text-decoration : line-through; }
+
+ins { 
+background-color : $ins-bg-color; 
+color : $ins-text-color; 
+text-decoration : none; }
+
+mark { 
+background-color : $mark-bg-color; 
+color : $mark-text-color; 
+font-style : italic; 
+font-weight : bold; }
+
+abbr[title], 
+dfn[title] { 
+border-bottom : 1px dotted; 
+cursor : help; }
+
+table { 
+border-collapse : collapse; 
+border-spacing : 0; }
+
+hr { 
+display : block; 
+height : 1px; 
+border : 0; 
+border-top : 1px solid $hr-color;
+margin : 1em 0; 
+padding : 0; }
+
+/* 1.ROOT */
+
+html {
+overflow-y : scroll;
+background : rgb(255,255,255) /* url(../img/tmp/grid.png) repeat-y 50% 0 */; }
+
+body { 
+margin : 0 auto;
+padding : 24px 0;
+width : 90% /* 252px */;
+font : 100%/1.4 Cambria, Georgia, Times, "Times New Roman";
+color : rgb(40,40,40); 
+background-color : transparent; }
+
+/* 2.HEADINGS */
+@import "headings.scss";
+
+/* 3.TYPOGRAPHY */
+@import "typography.scss";
+
+/* 4.LINKS */
+
+a {
+outline : none;
+color : $link-color;
+text-decoration : none; }
+
+a:visited {
+@extend a;
+color : $link-visited-color;
+}
+ 
+a:hover { 
+@extend a;
+color : $link-hover-color;
+text-decoration : underline; }
+ 
+a:active, 
+a:focus { 
+@extend a;
+color : $link-active-color; }
+
+/* 5.FIGURES & IMAGES */
+
+figure {
+margin-bottom : 1.5em; }
+
+figure img,
+figure object,
+figure embed {
+margin-bottom : .75em;
+max-width : 100%; }
+
+figcaption {
+display : block;
+font-weight : normal; }
+
+/* 6.TABLES */
+
+table { 
+border-collapse : collapse;
+border-spacing : 0;
+margin-bottom : 1.4em; 
+width : 100%;
+font-size : .875em; /* 14 / 16 = .875 */ }
+
+th { 
+font-weight : bold; }
+
+th, td, caption { 
+padding : .25em 10px .25em 5px; }
+
+tfoot { 
+font-style : italic; }
+
+caption { 
+background-color : transparent; }
+
+/* 7.FORMS */
+
+@import "forms.scss";
+
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+/* 12.COMPLIMENTARY */
+/* 13.CONTENTINFO */
+
+/* 14.GLOBAL OBJECTS */
+@import "helpers.scss";
+
+/* 15.VENDOR-SPECIFIC */
+
+body {
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+a:link { 
+-webkit-tap-highlight-color : $tap-highlight-color; }
+
+::-webkit-selection { 
+background : $select-bg-color; 
+color : $select-text-color; 
+text-shadow : none; }
+
+::-moz-selection { 
+background : $select-bg-color; 
+color : $select-text-color; 
+text-shadow : none; }
+
+::selection { 
+background : $select-bg-color; 
+color : $select-text-color; 
+text-shadow : none; }
+
+::-webkit-input-placeholder {
+padding : 10px;
+font-size : .875em; 
+line-height : 1.4; }
+
+input:-moz-placeholder { 
+padding : 10px;
+font-size : .875em; 
+line-height : 1.4; }
+
+.ie7 img,
+.iem7 img { 
+-ms-interpolation-mode : bicubic; }
+
+div,
+input,
+textarea  { 
+-webkit-box-sizing : border-box;
+-moz-box-sizing : border-box;
+-o-box-sizing : border-box;
+box-sizing : border-box; }
+
+/* 16.TEMPLATE SPECIFICS */
+
+#goog-fixurl ul  {
+list-style-type : none; }
+
+#goog-fixurl input  {
+margin-bottom : 1.5em; }
+
+/* 17.MODERNIZR */
+
